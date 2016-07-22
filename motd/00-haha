@@ -1,0 +1,75 @@
+#!/bin/bash
+#
+#    00-header - create the header of the MOTD
+#    Copyright (C) 2009-2010 Canonical Ltd.
+#
+#    Authors: Dustin Kirkland <kirkland@canonical.com>
+#
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License along
+#    with this program; if not, write to the Free Software Foundation, Inc.,
+#    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+#[ -r /etc/lsb-release ] && . /etc/lsb-release
+
+#if [ -z "$DISTRIB_DESCRIPTION" ] && [ -x /usr/bin/lsb_release ]; then
+#	# Fall back to using the very slow lsb_release utility
+#	DISTRIB_DESCRIPTION=$(lsb_release -s -d)
+#fi
+
+#printf "Welcome to %s (%s %s %s)\n" "$DISTRIB_DESCRIPTION" "$(uname -o)" "$(uname -r)" "$(uname -m)"
+cat << 'EOF'
+[38;5;46m[48;5;11m██████╗  ██████╗ ██╗     ███████╗ ██████╗   ████╗  ███████╗████████╗ ██████╗ ██    ██╗[49m
+[48;5;11m  ██╔═╝  ██╔══██╗██║     ██╔════╝ ██╔══██╗ ██║ ██═╗██╔════╝██║██║██║██╔═══██╗████  ██║[49m
+[48;5;11m  ██║    ██║  ██║██║     █████╗   ██║  ██║██═╝  ██║█████╗  ██║██║██║██║   ██║██╗██ ██║[49m
+[48;5;11m  ██║    ██║  ██║██║     ██╔══╝   ██║  ██║████████║██╔══╝  ██║██║██║██║   ██║██║ ████║[49m
+[48;5;11m██████╗  ██████╔╝███████╗███████╗ ██████╔╝██╔══╗██║███████╗██║╚═╝██║╚██████╔╝██║   ██║[49m
+[48;5;11m╚═════╝  ╚═════╝ ╚══════╝╚══════╝ ╚═════╝ ╚═╝  ╚══╝╚══════╝╚═╝   ╚═╝ ╚═════╝ ╚═╝   ╚═╝[0m
+[48;5;234m                                                                                      [49m
+[48;5;234m                                                                                      [49m
+[48;5;234m                             [5mHave a [38;5;39mn[38;5;198mi[38;5;208mc[38;5;191me[39m day!                                        [49m
+[48;5;234m                                                                                      [49m
+[0m[48;5;234m                                                                                      [49m
+[48;5;234m                                   ,---------------,                                  [49m
+[48;5;234m                                   | [1mWOW! This cat [22m|                                  [49m
+[48;5;234m                                   | [1mlooks like a  [22m|                                  [49m
+[48;5;234m                                   | [1mdog...        [22m|            .-.                   [49m
+[48;5;234m                                   `---------------'            \ \                   [49m
+[48;5;234m                                     (_)                         \ \                  [49m
+[48;5;234m                                         O                       | |                  [49m
+[48;5;234m                    |\ /\                  o                     | |                  [49m
+[48;5;234m    __              |,\(_\_                  . /\---/\   _,---._ | |                  [49m
+[48;5;234m   ( (              |\,`  [1m[38;5;9m_[22m[39m`-^.               /^   ^  \,'       `. ;                  [49m
+[48;5;234m    \ \             :   [1m[38;5;9m `-'[22m[39m  )              ( O   O   )           ;                  [49m
+[48;5;234m     \ \             \       ;                `.=o=__,'            \                  [49m
+[48;5;234m      \ \             `-.   '                   /         _,--.__   \                 [49m
+[48;5;234m       \ \ ____________,'  )                   /  _ )   ,'   `-. `-. \                [49m
+[48;5;234m        ; '                ;                  / ,' /  ,'        \ \ \ \               [49m
+[48;5;234m        \                 /___,-.            / /  / ,'          (,_)(,_)              [49m
+[48;5;234m         `,    ,_____|  ;'_____,'           (,;  (,,)  [1m[48;5;55mpangpang[22m[48;5;234m                       [49m
+[48;5;234m       ,-" \  :      | :                                                              [49m
+[48;5;234m      ( .-" \ `.__   | |                                                              [49m
+[48;5;234m       \__)  `.__,'  |__) [1m[48;5;55mmaomao[22m[48;5;234m                                                      [49m
+[48;5;234m                                                                                      [49m
+[48;5;234m                                                                                      [49m
+[48;5;233m                                                                                      [49m
+[48;5;233m                               [1;37;41m FBI WARNING [0m[48;5;233m                                          [49m
+[48;5;233m                                                                                      [49m
+[48;5;233m                                                                                      [49m
+[48;5;233m          Federal law provides severe civil and criminal penalties for                [49m
+[48;5;233m          the unauthorized reproduction, distribution or exhibition of                [49m
+[48;5;233m          copyrighted motion pictures ( Title 17, United States Code,                 [49m
+[48;5;233m          Sections 501 and 508 ). The Federal Bureau of Investigation                 [49m
+[48;5;233m          investigates allegations of criminal copyright infringement                 [49m
+[48;5;233m                 ( Title 17, United States Code, Section 506 ).                       [49m
+[48;5;233m                                                                                      [49m[0m
+EOF
